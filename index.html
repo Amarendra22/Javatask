@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Java Task</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <Div class="container">
+
+      <h1>Image Gallery</h1>
+      
+      <i class="fa-solid fa-angle-left"></i>
+
+      <Div Class="image-container">
+      
+        <Div Class="image"><img src="https://wallpapers.com/images/featured/2ygv7ssy2k0lxlzu.jpg"  alt=""></Div>
+        <Div Class="image"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"  alt=""></Div>
+        <Div Class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg"  alt=""></Div>
+        <Div Class="image"><img src="https://thumbs.dreamstime.com/b/landscape-nature-mountan-alps-rainbow-76824355.jpg"  alt=""></Div>
+        <Div Class="image"><img src="https://learn.corel.com/wp-content/uploads/2022/01/alberta-2297204_1280.jpg"  alt=""></Div>
+        <Div Class="image"><img src="https://img.freepik.com/premium-photo/canada-forest-landscape-spirit-island-with-big-mountain-background-alberta-canada_88037-191.jpg?w=2000"  alt=""></Div>
+        <Div Class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiB6O_lfxeRec_iL5xnCkXpYVSKcbR2ouoMA&usqp=CAU"  alt=""></Div>
+        <Div Class="image"><img src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2018/10/bluebells,_oxfordshire.jpg?fit=1500%2C1000&ssl=1"  alt=""></Div>
+        <Div Class="image"><img src="https://wallpaperaccess.com/full/393735.jpg" alt=""></Div>
+        <Div Class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxkQJ-drVC5STAa3WwtRKz2C5JPEdw6B7LBw&usqp=CAU"  alt=""></Div>
+        <Div Class="image"><img src="https://hips.hearstapps.com/hmg-prod/images/nature-quotes-landscape-1648265299.jpg" alt=""></Div>
+        <Div Class="image"><img src="https://a.cdn-hotels.com/gdcs/production76/d1135/21203dce-feeb-40f3-8c93-fc1a98f7549a.jpg?impolicy=fcrop&w=800&h=533&q=medium"  alt=""></Div>
+      
+      </Div>
+      
+      <i class="fa-solid fa-angle-"></i>
+
+    <Div class="popup-image">
+      <span>&times;</span>
+      <img src="https://wallpapers.com/images/featured/2ygv7ssy2k0lxlzu.jpg"  alt="">
+    </Div>
+    </Div>
+    
+  <script>
+
+  document.querySelectorAll('.image-container img').forEach(image =>{
+    image.onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'block';
+      document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+    
+  });
+
+  document.querySelector('.popup-image span').onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'none';
+  }
+
+  </script>
+  </body>
+</html>
